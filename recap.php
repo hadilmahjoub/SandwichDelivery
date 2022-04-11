@@ -12,10 +12,20 @@
     <?php
     foreach ($_POST as $key => $value) {
     ?>
-        <p><?= $key . ": " . $value ?></p>
-
+        <p><b><?= $key ?></b> <?= ": ". $value ?></p>
 
     <?php } ?>
+
+    <footer>
+        <?php 
+        global $price;
+        $price = 4*$_POST["sandnbr"];
+            if ($_POST["sandnbr"] > 10) {
+                $price -= $price * 0.1; 
+            }
+        ?>
+        <h2>price to pay: <?= $price ?> dt</h2>
+    </footer>
 
 </div>
 

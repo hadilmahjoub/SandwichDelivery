@@ -22,7 +22,7 @@ body {
     box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px rgba(0,0,0,1);
 }
 
-input,textarea,header {
+input,textarea,header,footer,label,select,p {
     display: block;
     width: 100%;
     font-size: 14pt;
@@ -39,23 +39,16 @@ input,textarea,header {
 }
 
 label,select,p {
-    display: block;
-    width: 100%;
     font-size: 12pt;
     line-height: 12pt * 2;
-    font-family: 'Fjalla One';
     margin-bottom: 12pt * 2;
-    border: none;
     border-bottom: 5px solid rgb(97, 0, 0);
-    background:  #f8f4e5;
     min-width: 50px;
-    padding-left: 5px;
-    outline: none;
-    color: rgba(0,0,0,1);
 }
 
-header {
+header,footer {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 p{
@@ -65,11 +58,11 @@ p{
 
 .sand {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .sand label {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 input:focus {
