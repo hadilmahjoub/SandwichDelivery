@@ -1,5 +1,13 @@
 <?php
-    // var_dump($_POST);
+    // foreach ($_POST as $key => $value) {
+    //     $value = strip_tags($_POST[$key]);
+    // }
+
+    $name = htmlspecialchars($_POST["name"]);
+    // $lastname = strip_tags($_POST['lastname']);
+    // $sandnbr = strip_tags($_POST['sandnbr']);
+    // $sandtype = strip_tags($_POST['sandtype']);
+
 ?>
 
 <html>
@@ -11,6 +19,9 @@
 
     <?php
     foreach ($_POST as $key => $value) {
+        if ($key=="CIN") {
+            continue;
+        }
     ?>
         <p><b><?= $key ?></b> <?= ": ". $value ?></p>
 

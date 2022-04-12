@@ -8,8 +8,13 @@
     <title>SanDelivery</title>
   </head>
   <body>
-    <form name="delform" action="recap.php" method="post" id="from">
-      <input type="text" id="name" name="name" placeholder="Name" required/><br />
+    <form name="delform" action="recap.php" method="post" id="form">
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Name" 
+        required/><br />
       <input
         type="text"
         name="lastname"
@@ -33,6 +38,11 @@
         required
       ></textarea
       ><br />
+      <div class="sand">
+        <label for="CIN">CIN</label>
+        <input type="file" name="CIN" id="CIN">
+
+      </div>
       <div class="sand">
         <label for="sandtype">Sandwich type</label>
         <select name="sandtype" id="sandtype">
